@@ -3,3 +3,77 @@ html{
   margin: 0;
   font-family: sans-serif;
 }
+
+.div-navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background-color: rgba(120, 150, 255, 0.85);
+}
+
+.navbar{
+  display: flex;
+  gap: 40px;
+}
+.navbar a{
+  color: white;
+  text-decoration-line: none;
+}
+
+.hero-banner {
+  margin-top: 20px;
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 50, 0.6), transparent);
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero-text {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  align-self: flex-start;
+}
+
+.hero-button {
+  background-color: rgba(120, 150, 255, 0.85);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: rgba(100, 130, 230, 0.95);
+}
+.title-homePage {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #25314f; /* blu profondo desaturato */
+  font-weight: 300;
+  font-family: 'Playfair Display', serif; /* elegante e contemporaneo */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+
