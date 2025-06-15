@@ -9,7 +9,11 @@ export default function Contact() {
         <section>
             <h2 className="title-singlePage">Contattaci</h2>
             <div className="contatti-info">
-                <p><span className='span-home'><FontAwesomeIcon icon={faEnvelope} /></span>E-mail:<a href="mailto:pepe2117k@gmail.com">pepe2117k@gmail.com</a> </p>
+                <p><span className='span-home'><FontAwesomeIcon icon={faEnvelope} /></span>E-mail:<a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=pepe2117k@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >pepe2117k@gmail.com</a> </p>
                 <p><span className='span-home'><FontAwesomeIcon icon={faPhone} /></span>
                     Cellulare:
                     <a href="tel:+393331598026">3331598026</a>
