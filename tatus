@@ -1,0 +1,17 @@
+[33mcommit 89876b8a0723e7f23255c68cac5c17c3072cad06[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: GiuseppeLiGioi <pepe2117k@gmail.com>
+Date:   Sun Jun 15 18:58:45 2025 +0200
+
+    added: part of contact and fixed the homepage and test it.
+
+[33mcommit d60c6ceb1843cfe93ab44cb94fcf6f0040761fd8[m
+Author: GiuseppeLiGioi <pepe2117k@gmail.com>
+Date:   Fri Jun 13 22:29:03 2025 +0200
+
+    added. default route and strted pages.
+
+[33mcommit 03264fee2aa51a9634db072d37fbf47ced9a30a5[m
+Author: GiuseppeLiGioi <pepe2117k@gmail.com>
+Date:   Fri Jun 13 22:06:31 2025 +0200
+
+    create new repo

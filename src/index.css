@@ -1,10 +1,15 @@
-html{
-  padding: 0;
+/* Reset base e sfondo */
+*,
+body,
+html {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
+  
 }
 
-.div-navbar{
+.div-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +18,12 @@ html{
   background-color: rgba(120, 150, 255, 0.85);
 }
 
-.navbar{
+.navbar {
   display: flex;
   gap: 40px;
 }
-.navbar a{
+
+.navbar a {
   color: white;
   text-decoration-line: none;
 }
@@ -44,11 +50,12 @@ html{
 
 .hero-text {
   color: white;
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+
   align-self: flex-start;
 }
+
 
 .hero-button {
   background-color: rgba(120, 150, 255, 0.85);
@@ -58,22 +65,75 @@ html{
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .hero-button:hover {
   background-color: rgba(100, 130, 230, 0.95);
 }
+
 .title-homePage {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 30px;
-  color: #25314f; /* blu profondo desaturato */
+  color: #25314f;
   font-weight: 300;
-  font-family: 'Playfair Display', serif; /* elegante e contemporaneo */
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+.title-singlePage {
+  margin-top: 40px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #25314f;
+  font-weight: 300;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   opacity: 0.9;
 }
 
+.contatti-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.contatti-info p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contatti-info a {
+  color: rgba(120, 150, 255, 0.85);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.contatti-info a:hover {
+  text-decoration: underline;
+}
+
+.descrizione-contatti {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #25314f;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+.span-home{
+  margin-right: 5px;
+}
 
