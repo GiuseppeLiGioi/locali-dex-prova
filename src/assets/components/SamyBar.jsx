@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 export default function SamyBar() {
   const arrowRef = useRef()
   const navigate = useNavigate()
@@ -36,7 +36,7 @@ export default function SamyBar() {
       marginRight: '20px',
       userSelect: 'none',
       animation: 'bounce 2s infinite',
-      margin: 0
+      margin: 0,
     }}
   >
     ↓
@@ -45,10 +45,10 @@ export default function SamyBar() {
 
 
       <div className="container-images">
-        <img className="main-image" src="/public/foto1.jfif" alt="foto1" />
+        <img className="main-image" src="/public/foto7.jpg" alt="foto1" />
         <div className="top-images">
-          <img src="/public/foto2.jfif" alt="foto2" />
-          <img src="/public/foto3.jfif" alt="foto3" />
+          <img src="/public/veranda-esterna.jpg" alt="foto2" />
+          <img src="/public/veranda-esterna-2.jpg" alt="foto3" />
         </div>
 
         <p className="descrizione-contatti">
@@ -57,8 +57,8 @@ export default function SamyBar() {
         <div className="wrapper">
           <div className="carousel left-carousel">
 
-            <img src="/public/foto1.jfif" alt="Foto 1" />
-            <img src="/public/foto3.jfif" alt="Foto 2" />
+            <img src="/public/foto1.jpg" alt="Foto 1" />
+            <img src="/public/foto7.jpg" alt="Foto 2" />
           </div>
 
 
@@ -79,8 +79,8 @@ export default function SamyBar() {
           </div>
           <div className="carousel right-carousel">
 
-            <img src="/public/foto1.jfif" alt="Foto 1" />
-            <img src="/public/foto3.jfif" alt="Foto 2" />
+            <img src="/public/foto1.jpg" alt="Foto 1" />
+            <img src="/public/foto7.jpg" alt="Foto 2" />
           </div>
         </div>
 

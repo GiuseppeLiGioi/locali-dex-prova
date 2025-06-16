@@ -14,13 +14,13 @@ export default function CafeDuPort(){
       <div className="intest-marquee">
         <p className="desc-marquee">“Aperti Dal Lunedì al Sabato – Cucina aperta dalle 12:00 alle 15:00 – Pizzeria aperta dalle 19 - 22.30.  Anche da asporto!”</p>
       </div>
-      <h1 className="title-homePage">SamyBar</h1>
+      <h1 className="title-homePage">CAFÈ DU PORT</h1>
 
       <div className="container-images">
-        <img className="main-image" src="/public/foto1.jfif" alt="foto1" />
+        <img className="main-image" src="/public/foto1.jpg" alt="foto1" />
         <div className="top-images">
-          <img src="/public/foto2.jfif" alt="foto2" />
-          <img src="/public/foto3.jfif" alt="foto3" />
+          <img src="/public/foto1.jpg" alt="foto2" />
+          <img src="/public/foto1.jpg" alt="foto3" />
         </div>
 
         <p className="descrizione-contatti">

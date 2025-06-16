@@ -177,28 +177,29 @@ html {
 
 .main-image {
   width: 100%;
-  height: 50vh;
-  /* aumentata da 30vh a 40vh */
+  height: 70vh;
   object-fit: cover;
   display: block;
+  object-position: center 85%;
 }
+
+
 
 .top-images {
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: 30px;
   width: 100%;
-  height: 50vh;
-  /* pari all'immagine di sfondo */
+  height: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 .top-images img {
   height: 75%;
-  /* aumentato da 60% a 75% di 40vh = 30vh circa */
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -265,6 +266,7 @@ html {
   letter-spacing: 0.4px;
 }
 
+
 .map-link {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
@@ -317,8 +319,8 @@ html {
 
 .carousel {
   position: relative;
-  width: 400px;   /* aumentato da 300px */
-  height: 300px;  /* aumentato da 200px */
+  width: 400px;
+  height: 300px;  
   overflow: hidden;
   margin: 0 40px;
 }
@@ -350,4 +352,8 @@ html {
 @keyframes fade2 {
   0%, 45%, 100% { opacity: 0; }
   50%, 95% { opacity: 1; }
+}
+
+.container-crazy{
+  background-color: rgba(200, 50, 50, 1);
 }
