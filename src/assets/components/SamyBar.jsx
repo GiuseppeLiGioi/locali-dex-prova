@@ -1,6 +1,20 @@
+import { useNavigate } from "react-router-dom";
 export default function SamyBar() {
+
+  const navigate = useNavigate()
+
+  
+  const handleClick = () => {
+  navigate('/')
+  }
+
+
+
   return (
     <div className="container">
+      <div className="intest-marquee">
+        <p className="desc-marquee">“Aperti Dal Lunedì al Sabato – Cucina aperta dalle 12:00 alle 15:00 – Pizzeria aperta dalle 19 - 22.30.  Anche da asporto!”</p>
+      </div>
       <h1 className="title-homePage">SamyBar</h1>
 
       <div className="container-images">
@@ -42,6 +56,7 @@ export default function SamyBar() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            <button className="btn" onClick={handleClick}>Torna alla Home</button>
           </div>
         </div>
       </div>
