@@ -1,11 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { useRef, useEffect } from "react";
 export default function SamyBar() {
-
+  const arrowRef = useRef()
   const navigate = useNavigate()
 
-  
+
   const handleClick = () => {
-  navigate('/')
+    navigate('/')
+  }
+  const handleScroll = () => {
+    arrowRef.current.scrollIntoView({ behavior: 'smooth' })
   }
 
 
@@ -15,7 +19,30 @@ export default function SamyBar() {
       <div className="intest-marquee">
         <p className="desc-marquee">“Aperti Dal Lunedì al Sabato – Cucina aperta dalle 12:00 alle 15:00 – Pizzeria aperta dalle 19 - 22.30.  Anche da asporto!”</p>
       </div>
-      <h1 className="title-homePage">SamyBar</h1>
+<div style={{
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  margin: '10px 20px'
+}}>
+  <h1 className="title-homePage" style={{ flex: 1, textAlign: 'center' }}>
+    SamyBar
+  </h1>
+  <p
+    onClick={handleScroll}
+    style={{
+      cursor: 'pointer',
+      fontSize: '1.5rem',
+      marginRight: '20px',
+      userSelect: 'none',
+      animation: 'bounce 2s infinite',
+      margin: 0
+    }}
+  >
+    ↓
+  </p>
+</div>
+
 
       <div className="container-images">
         <img className="main-image" src="/public/foto1.jfif" alt="foto1" />
@@ -27,20 +54,34 @@ export default function SamyBar() {
         <p className="descrizione-contatti">
           SamyBar è un bar-ristorante sul mare in Sardegna, ideale per gustare ottime pizze artigianali e panini con carni selezionate. Offre una cucina di qualità in un’atmosfera rilassante e accogliente. Perfetto per una pausa gustosa vicino al mare.
         </p>
+        <div className="wrapper">
+          <div className="carousel left-carousel">
 
-        <div className="orari-container">
-          <section className="orari-section">
-            <h3 className="orari-title">⏰ Orari Di Apertura:</h3>
-            <p className="orari-text">Lunedì - Sabato / 06.00 - 23.00</p>
-          </section>
-          <section className="orari-section">
-            <h3 className="orari-title">🍽️ Orari Cucina:</h3>
-            <p className="orari-text">Lunedì - Sabato / 12.00 - 15.00</p>
-          </section>
-          <section className="orari-section">
-            <h3 className="orari-title">🍕 Orari Pizzeria:</h3>
-            <p className="orari-text">Lunedì - Sabato / 19.00 - 22.30</p>
-          </section>
+            <img src="/public/foto1.jfif" alt="Foto 1" />
+            <img src="/public/foto3.jfif" alt="Foto 2" />
+          </div>
+
+
+          <div className="orari-container">
+            <h4 className="orari-section-title">I NOSTRI ORARI:</h4>
+            <section className="orari-section">
+              <h3 className="orari-title">⏰ Orari Di Apertura:</h3>
+              <p className="orari-text">Lunedì - Sabato / 06.00 - 23.00</p>
+            </section>
+            <section className="orari-section">
+              <h3 className="orari-title">🍽️ Orari Cucina:</h3>
+              <p className="orari-text">Lunedì - Sabato / 12.00 - 15.00</p>
+            </section>
+            <section className="orari-section">
+              <h3 className="orari-title">🍕 Orari Pizzeria:</h3>
+              <p className="orari-text">Lunedì - Sabato / 19.00 - 22.30</p>
+            </section>
+          </div>
+          <div className="carousel right-carousel">
+
+            <img src="/public/foto1.jfif" alt="Foto 1" />
+            <img src="/public/foto3.jfif" alt="Foto 2" />
+          </div>
         </div>
 
         <div className="map-section">
@@ -56,7 +97,7 @@ export default function SamyBar() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <button className="btn" onClick={handleClick}>Torna alla Home</button>
+            <button ref={arrowRef} className="btn" onClick={handleClick}>Torna alla Home</button>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  
+
 }
 
 .div-navbar {
@@ -17,28 +17,32 @@ html {
   gap: 20px;
   background-color: rgba(120, 150, 255, 0.85);
 }
-.intest-marquee{
+
+.intest-marquee {
   width: 100%;
   overflow: hidden;
-  background:rgba(52, 152, 219, 0.9);
+  background: rgba(52, 152, 219, 0.9);
   color: white;
   height: 40px;
   position: relative;
   display: flex;
   align-items: center;
 }
-.desc-marquee{
-   white-space: nowrap;
+
+.desc-marquee {
+  white-space: nowrap;
   display: inline-block;
   padding-left: 100%;
   animation: scroll-left 10s linear infinite;
   font-size: 1.2rem;
   font-family: 'Playfair Display', serif;
 }
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -109,8 +113,9 @@ html {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   opacity: 0.9;
-  
+
 }
+
 .title-singlePage {
   margin-top: 40px;
   font-size: 2rem;
@@ -161,7 +166,7 @@ html {
   opacity: 0.9;
 }
 
-.span-home{
+.span-home {
   margin-right: 5px;
 }
 
@@ -172,7 +177,8 @@ html {
 
 .main-image {
   width: 100%;
-  height: 50vh; /* aumentata da 30vh a 40vh */
+  height: 50vh;
+  /* aumentata da 30vh a 40vh */
   object-fit: cover;
   display: block;
 }
@@ -182,7 +188,8 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh; /* pari all'immagine di sfondo */
+  height: 50vh;
+  /* pari all'immagine di sfondo */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,17 +197,23 @@ html {
 }
 
 .top-images img {
-  height: 75%; /* aumentato da 60% a 75% di 40vh = 30vh circa */
+  height: 75%;
+  /* aumentato da 60% a 75% di 40vh = 30vh circa */
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
 .orari-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   margin-top: 60px;
+
+  flex-basis: 50%;       
+  max-width: 50%;
+
 }
 
 .orari-section {
@@ -210,7 +223,17 @@ html {
 .orari-title {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
+  margin-bottom: 60px;
   font-size: 1.3rem;
+  color: #25314f;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.orari-section-title{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
   color: #25314f;
   margin-bottom: 4px;
   letter-spacing: 0.3px;
@@ -254,14 +277,18 @@ html {
   text-decoration: underline;
   color: rgba(100, 130, 230, 0.95);
 }
+
 .page-wrapper {
   background-color: #e6e6e6;
-  padding: 0 0 15px 0; /* padding solo in basso per evitare lo spazio bianco */
+  padding: 0 0 15px 0;
+
 }
+
 .btn {
   margin-top: 30px;
   padding: 12px 24px;
-  background-color: #3498db; /* blu professionale */
+  background-color: #3498db;
+
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -273,7 +300,54 @@ html {
 }
 
 .btn:hover {
-  background-color: #2980b9; /* blu più scuro */
+  background-color: #2980b9;
+  /* blu più scuro */
   transform: translateY(-2px);
 }
 
+.wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: nowrap;
+}
+
+.carousel {
+  position: relative;
+  width: 400px;   /* aumentato da 300px */
+  height: 300px;  /* aumentato da 200px */
+  overflow: hidden;
+  margin: 0 40px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.carousel img:nth-child(1) {
+  animation-name: fade1;
+}
+
+.carousel img:nth-child(2) {
+  animation-name: fade2;
+}
+
+@keyframes fade1 {
+  0%, 45%, 100% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+}
+
+@keyframes fade2 {
+  0%, 45%, 100% { opacity: 0; }
+  50%, 95% { opacity: 1; }
+}
